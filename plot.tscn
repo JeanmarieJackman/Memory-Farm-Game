@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://be45y2ai43uot"]
+
+[ext_resource type="Script" uid="uid://cs0aq51tycs8c" path="res://plot.gd" id="1_r8nw5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r8nw5"]
+size = Vector2(100, 100)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_r8nw5"]
+
+[node name="Plot" type="Node2D" unique_id=563843946]
+script = ExtResource("1_r8nw5")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=974546038]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=823431215]
+shape = SubResource("RectangleShape2D_r8nw5")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=498690771]
+scale = Vector2(100, 100)
+texture = SubResource("PlaceholderTexture2D_r8nw5")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

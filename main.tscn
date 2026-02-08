@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cvooujhiw2sgu"]
+
+[ext_resource type="Script" uid="uid://2uufpngk7kx8" path="res://board.gd" id="1_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=645306665]
+
+[node name="Board" type="Node2D" parent="." unique_id=1643349823]
+position = Vector2(200, 200)
+script = ExtResource("1_0xm2m")

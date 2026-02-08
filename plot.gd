@@ -4,6 +4,7 @@ signal plot_clicked(plot)
 
 @onready var content_sprite := $ContentSprite
 @onready var cover_sprite = $CoverSprite
+@onready var matched_sprite = $MatchedSprite
 
 var seed_id := 0
 var locked := false
@@ -55,8 +56,9 @@ func hide_seed():
 
 func lock_in():
 	locked = true
-	content_sprite.visible = true
 	cover_sprite.visible = false
+	content_sprite.visible = false
+	matched_sprite.visible = true
 	#content_sprite.modulate = Color(0.3, 0.3, 0.3)
 	#modulate = Color(0, 1, 0)
 	#modulate = Color(0.3, 0.3, 0.3)

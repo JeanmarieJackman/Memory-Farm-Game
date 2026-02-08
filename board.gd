@@ -3,7 +3,7 @@ extends Node2D
 @export var rows := 4
 @export var cols := 4
 @export var spacing := 120
-@export var max_turns := 12
+@export var max_turns := 16
 var remaining_turns := 0
 var resolving := false
 

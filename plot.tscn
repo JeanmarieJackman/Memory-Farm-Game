@@ -20,12 +20,14 @@ script = ExtResource("1_r8nw5")
 shape = SubResource("RectangleShape2D_r8nw5")
 
 [node name="CoverSprite" type="Sprite2D" parent="." unique_id=433172963]
+modulate = Color(0.8320226, 0.7662867, 0.57291615, 1)
 z_index = 1
 scale = Vector2(100, 100)
 texture = SubResource("PlaceholderTexture2D_ticr0")
 
 [node name="MatchedSprite" type="Sprite2D" parent="." unique_id=1540149570]
 visible = false
+modulate = Color(0.35707492, 0.14045614, 0.0011214465, 1)
 scale = Vector2(100, 100)
 texture = SubResource("PlaceholderTexture2D_ctcuh")
 

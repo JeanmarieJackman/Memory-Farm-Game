@@ -8,7 +8,7 @@ signal plot_clicked(plot)
 @onready var base_tile = $BaseTile
 @onready var seed_pack = $SeedPack
 @onready var seed_post = $SeedPost
-@onready var crop_stage = $CropStage
+#@onready var crop_stage = $CropStage
 @onready var final_crop = $FinalCrop
 @onready var crop_stages = [
 	$CropStage_UL,
@@ -80,13 +80,14 @@ const SEED_COLORS = [
 	
 func _ready():
 	state = PlotState.COVERED
+	#crop_stages = crop_stage.get_children()
 	update_visuals()
 
 func set_seed(id):
 	seed_id = id
 	hide_seed()
 
-func _on_area_2d_input_event(viewport, event, shape_idx):
+func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if locked:
 		return
 	if event is InputEventMouseButton and event.pressed:

@@ -5,11 +5,12 @@ signal turns_changed(value)
 @export var rows := 4
 @export var cols := 4
 @export var spacing := 120
-@export var max_turns := 160
+@export var max_turns := 16
+@export var crop_types: Array[CropData]
+
+
 var remaining_turns := 0
 var resolving := false
-
-
 var plots := []
 var first_selected = null
 var second_selected = null
@@ -53,14 +54,22 @@ func spawn_grid():
 		seeds.append(i)
 
 	seeds.shuffle()
-	
+
 	var index = 0
 	for r in range(rows):
 		for c in range(cols):
 			var plot = plot_scene.instantiate()
 			plot.position = Vector2(c * spacing, r * spacing)
-			plot.seed_id = seeds[index]
+
+			var seed_id = seeds[index]
 			index += 1
+
+			plot.set_seed(seed_id)
+
+			if seed_id < crop_types.size():
+				plot.crop_data = crop_types[seed_id]
+				plot.apply_crop_data()
+
 			add_child(plot)
 			plot.connect("plot_clicked", _on_plot_clicked)
 			plots.append(plot)

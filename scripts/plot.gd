@@ -19,9 +19,20 @@ signal plot_clicked(plot)
 
 
 @export var dirt_texture: Texture2D
+@export var crop_data: CropData
+
 
 enum PlotState { COVERED, REVEALED, MATCHED, WIN }
 var state = PlotState.COVERED
+
+func apply_crop_data():
+	seed_pack.texture = crop_data.seed_pack
+	seed_post.texture = crop_data.seed_post
+	crop_stages[0].texture = crop_data.crop_stage_1
+	crop_stages[1].texture = crop_data.crop_stage_2
+	crop_stages[2].texture = crop_data.crop_stage_3
+	crop_stages[3].texture = crop_data.crop_stage_4
+	final_crop.texture = crop_data.final_crop
 
 func update_visuals():
 	base_tile.visible = true
@@ -60,16 +71,16 @@ var seed_id := 0
 var locked := false
 
 #const COVER_COLOR = Color(0.8, 0.8, 0.8)
-const SEED_COLORS = [
-	Color(1, 0, 0),   # red
-	Color(0, 1, 0),   # green
-	Color(0, 0, 1),   # blue
-	Color(1, 1, 0),   # yellow
-	Color(1, 0.5, 0), # orange
-	Color(0, 1, 1),   # cyan
-	Color(0.6, 0, 1), # purple
-	Color(0, 0, 0)    # black
-]
+#const SEED_COLORS = [
+	#Color(1, 0, 0),   # red
+	#Color(0, 1, 0),   # green
+	#Color(0, 0, 1),   # blue
+	#Color(1, 1, 0),   # yellow
+	#Color(1, 0.5, 0), # orange
+	#Color(0, 1, 1),   # cyan
+	#Color(0.6, 0, 1), # purple
+	#Color(0, 0, 0)    # black
+#]
 
 #func _ready():
 	#seed_id = randi() % 8
@@ -80,12 +91,14 @@ const SEED_COLORS = [
 	
 func _ready():
 	state = PlotState.COVERED
+	if crop_data:
+		apply_crop_data()
 	#crop_stages = crop_stage.get_children()
 	update_visuals()
 
 func set_seed(id):
 	seed_id = id
-	hide_seed()
+	#hide_seed()
 
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if locked:

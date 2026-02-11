@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://beyec8e1lj0xb"]
+
+[ext_resource type="Texture2D" uid="uid://k5g26eftfath" path="res://art/crops/cucumber/cucumber_crop_1.png" id="1_66rbw"]
+[ext_resource type="Texture2D" uid="uid://kr2i8fdbvuba" path="res://art/crops/cucumber/cucumber_crop_2.png" id="2_40vo7"]
+[ext_resource type="Texture2D" uid="uid://dln82xdbdkqil" path="res://art/crops/cucumber/cucumber_crop_3.png" id="3_heyu0"]
+[ext_resource type="Texture2D" uid="uid://sdsvinebxfj" path="res://art/crops/cucumber/cucumber_crop_4.png" id="4_8rawo"]
+[ext_resource type="Texture2D" uid="uid://dwcvj5ogtkfds" path="res://art/crops/cucumber/cucumber.png" id="5_7jvn7"]
+[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="6_rtrlg"]
+[ext_resource type="Texture2D" uid="uid://cqmtl8ork8tt2" path="res://art/crops/cucumber/cucumber_seedpack.png" id="7_bjsff"]
+[ext_resource type="Texture2D" uid="uid://ne1feapktt1m" path="res://art/crops/cucumber/cucumber_post.png" id="8_4g3ot"]
+
+[resource]
+script = ExtResource("6_rtrlg")
+seed_pack = ExtResource("7_bjsff")
+seed_post = ExtResource("8_4g3ot")
+crop_stage_1 = ExtResource("1_66rbw")
+crop_stage_2 = ExtResource("2_40vo7")
+crop_stage_3 = ExtResource("3_heyu0")
+crop_stage_4 = ExtResource("4_8rawo")
+final_crop = ExtResource("5_7jvn7")
+metadata/_custom_type_script = "uid://djkevnw5xau71"

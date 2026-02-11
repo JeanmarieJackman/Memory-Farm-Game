@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://d4inierdnexyu"]
+
+[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="1_cukdg"]
+
+[resource]
+script = ExtResource("1_cukdg")
+metadata/_custom_type_script = "uid://djkevnw5xau71"

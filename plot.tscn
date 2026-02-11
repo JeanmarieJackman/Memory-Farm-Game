@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://be45y2ai43uot"]
 
-[ext_resource type="Script" uid="uid://cs0aq51tycs8c" path="res://plot.gd" id="1_r8nw5"]
+[ext_resource type="Script" uid="uid://cs0aq51tycs8c" path="res://scripts/plot.gd" id="1_r8nw5"]
 [ext_resource type="Texture2D" uid="uid://djg7e0l3de0nl" path="res://art/tiles/FarmLand_Tile.png" id="2_bhrig"]
 [ext_resource type="Texture2D" uid="uid://c2j0qv11327qn" path="res://art/crops/carrot/carrot_seedpack.png" id="3_lbukb"]
 [ext_resource type="Texture2D" uid="uid://himnw3ypnyue" path="res://art/crops/carrot/carrot_post.png" id="4_1oo2w"]

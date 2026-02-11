@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://6pwqihh22nvo"]
+
+[ext_resource type="Texture2D" uid="uid://b33wwvcvv6ayi" path="res://art/crops/chilipepper/chilipepper_crop_1.png" id="1_j1pvp"]
+[ext_resource type="Texture2D" uid="uid://bjfh1x0lp7bg" path="res://art/crops/chilipepper/chilipepper_crop_2.png" id="2_3fvhv"]
+[ext_resource type="Texture2D" uid="uid://dwiualqtkdveh" path="res://art/crops/chilipepper/chilipepper_crop_3.png" id="3_471gn"]
+[ext_resource type="Texture2D" uid="uid://bpmu40tn4a23u" path="res://art/crops/chilipepper/chilipepper_crop_4.png" id="4_dm30h"]
+[ext_resource type="Texture2D" uid="uid://crxgwpgspt05a" path="res://art/crops/chilipepper/chiilipepper.png" id="5_h82r4"]
+[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="6_hyao3"]
+[ext_resource type="Texture2D" uid="uid://y1nc00l6814t" path="res://art/crops/chilipepper/chilipepper_seedpack.png" id="7_m4tdd"]
+[ext_resource type="Texture2D" uid="uid://dklubbttcaxqg" path="res://art/crops/chilipepper/chilipepper_post.png" id="8_fk46m"]
+
+[resource]
+script = ExtResource("6_hyao3")
+seed_pack = ExtResource("7_m4tdd")
+seed_post = ExtResource("8_fk46m")
+crop_stage_1 = ExtResource("1_j1pvp")
+crop_stage_2 = ExtResource("2_3fvhv")
+crop_stage_3 = ExtResource("3_471gn")
+crop_stage_4 = ExtResource("4_dm30h")
+final_crop = ExtResource("5_h82r4")
+metadata/_custom_type_script = "uid://djkevnw5xau71"

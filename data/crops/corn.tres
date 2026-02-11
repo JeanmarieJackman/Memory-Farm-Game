@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://cy500nhov5fxw"]
+
+[ext_resource type="Texture2D" uid="uid://dg8ix8apw3juc" path="res://art/crops/corn/corn_crop_1.png" id="1_covxn"]
+[ext_resource type="Texture2D" uid="uid://cnq87acy6fxs1" path="res://art/crops/corn/corn_crop_2.png" id="2_fq5wa"]
+[ext_resource type="Texture2D" uid="uid://bh7cnh6078flg" path="res://art/crops/corn/corn_crop_3.png" id="3_62qlu"]
+[ext_resource type="Texture2D" uid="uid://bfi85t6j1oc6p" path="res://art/crops/corn/corn_crop_4.png" id="4_5kaj7"]
+[ext_resource type="Texture2D" uid="uid://ycg3mr7wyjn2" path="res://art/crops/corn/corn.png" id="5_hk3vj"]
+[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="6_jfeh1"]
+[ext_resource type="Texture2D" uid="uid://doegbq52uxbdj" path="res://art/crops/corn/corn_seedpack.png" id="7_kw8k0"]
+[ext_resource type="Texture2D" uid="uid://cxqgjv6p0uvk6" path="res://art/crops/corn/corn_post.png" id="8_jxgs3"]
+
+[resource]
+script = ExtResource("6_jfeh1")
+seed_pack = ExtResource("7_kw8k0")
+seed_post = ExtResource("8_jxgs3")
+crop_stage_1 = ExtResource("1_covxn")
+crop_stage_2 = ExtResource("2_fq5wa")
+crop_stage_3 = ExtResource("3_62qlu")
+crop_stage_4 = ExtResource("4_5kaj7")
+final_crop = ExtResource("5_hk3vj")
+metadata/_custom_type_script = "uid://djkevnw5xau71"

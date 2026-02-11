@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://b4cvsi0me0yiq"]
+
+[ext_resource type="Texture2D" uid="uid://d03pvbqak7ybr" path="res://art/crops/greenpepper/greenpepper_crop_1.png" id="1_1n0bj"]
+[ext_resource type="Texture2D" uid="uid://c2rx0shcvt5bx" path="res://art/crops/greenpepper/greenpepper_crop_2.png" id="2_d4ffo"]
+[ext_resource type="Texture2D" uid="uid://bqo72l1per7pk" path="res://art/crops/greenpepper/greenpepper_crop_3.png" id="3_en6ks"]
+[ext_resource type="Texture2D" uid="uid://ysq26405mf7g" path="res://art/crops/greenpepper/greenpepper_crop_4.png" id="4_y4cng"]
+[ext_resource type="Texture2D" uid="uid://bibrfld6wc2dy" path="res://art/crops/greenpepper/greenpepper.png" id="5_oo02u"]
+[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="6_vbk64"]
+[ext_resource type="Texture2D" uid="uid://cxg043w7sjqeg" path="res://art/crops/greenpepper/greenpepper_seedpack.png" id="7_rbdiu"]
+[ext_resource type="Texture2D" uid="uid://bqobrfw4xweoc" path="res://art/crops/greenpepper/greenpepper_post.png" id="8_sytcu"]
+
+[resource]
+script = ExtResource("6_vbk64")
+seed_pack = ExtResource("7_rbdiu")
+seed_post = ExtResource("8_sytcu")
+crop_stage_1 = ExtResource("1_1n0bj")
+crop_stage_2 = ExtResource("2_d4ffo")
+crop_stage_3 = ExtResource("3_en6ks")
+crop_stage_4 = ExtResource("4_y4cng")
+final_crop = ExtResource("5_oo02u")
+metadata/_custom_type_script = "uid://djkevnw5xau71"

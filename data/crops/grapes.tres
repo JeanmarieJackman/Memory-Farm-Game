@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://c7kyf3txch7u1"]
+
+[ext_resource type="Texture2D" uid="uid://bdxi8aa2jv1ks" path="res://art/crops/grapes/grapes_crop_1.png" id="1_rrjhr"]
+[ext_resource type="Texture2D" uid="uid://vtwbkvfm6hti" path="res://art/crops/grapes/grapes_crop_2.png" id="2_al4k2"]
+[ext_resource type="Texture2D" uid="uid://5dx4c8w174th" path="res://art/crops/grapes/grapes_crop_3.png" id="3_4ojpy"]
+[ext_resource type="Texture2D" uid="uid://bsc1fu3w63rgd" path="res://art/crops/grapes/grapes_crop_4.png" id="4_00pvu"]
+[ext_resource type="Texture2D" uid="uid://ktma1rjjwj7c" path="res://art/crops/grapes/grapes.png" id="5_m8que"]
+[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="6_emelv"]
+[ext_resource type="Texture2D" uid="uid://bos61favkcjer" path="res://art/crops/grapes/grapes_seedpack.png" id="7_j5i8j"]
+[ext_resource type="Texture2D" uid="uid://buaih4k6b2lyn" path="res://art/crops/grapes/grapes_post.png" id="8_w6vgm"]
+
+[resource]
+script = ExtResource("6_emelv")
+seed_pack = ExtResource("7_j5i8j")
+seed_post = ExtResource("8_w6vgm")
+crop_stage_1 = ExtResource("1_rrjhr")
+crop_stage_2 = ExtResource("2_al4k2")
+crop_stage_3 = ExtResource("3_4ojpy")
+crop_stage_4 = ExtResource("4_00pvu")
+final_crop = ExtResource("5_m8que")
+metadata/_custom_type_script = "uid://djkevnw5xau71"

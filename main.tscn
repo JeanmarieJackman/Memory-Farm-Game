@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cvooujhiw2sgu"]
 
-[ext_resource type="Script" uid="uid://2uufpngk7kx8" path="res://board.gd" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://d0x2tmqhgod0s" path="res://turns_label.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://2uufpngk7kx8" path="res://scripts/board.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://d0x2tmqhgod0s" path="res://scripts/turns_label.gd" id="2_0xm2m"]
 
 [node name="Main" type="Node2D" unique_id=645306665]
 
@@ -16,5 +16,4 @@ offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("2_0xm2m")
 
-[connection signal="turns_changed" from="Board" to="Board" method="_on_board_turns_changed"]
 [connection signal="turns_changed" from="Board" to="CanvasLayer/TurnsLabel" method="_on_board_turns_changed"]

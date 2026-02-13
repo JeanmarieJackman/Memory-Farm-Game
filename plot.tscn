@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bs4qo6or7tcuh" path="res://art/crops/carrot/carrot.png" id="6_xqdsx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r8nw5"]
-size = Vector2(48, 48)
+size = Vector2(192, 192)
 
 [node name="Plot" type="Node2D" unique_id=563843946]
 script = ExtResource("1_r8nw5")
@@ -24,35 +24,35 @@ texture = ExtResource("2_bhrig")
 
 [node name="SeedPack" type="Sprite2D" parent="." unique_id=1169498005]
 visible = false
-scale = Vector2(4, 4)
+scale = Vector2(8, 8)
 texture = ExtResource("3_lbukb")
 
 [node name="SeedPost" type="Sprite2D" parent="." unique_id=610796070]
 visible = false
-scale = Vector2(4, 4)
+scale = Vector2(8, 8)
 texture = ExtResource("4_1oo2w")
 
 [node name="CropStage_UL" type="Sprite2D" parent="." unique_id=1133226910]
 visible = false
-position = Vector2(-16, -16)
+position = Vector2(-64, -64)
 scale = Vector2(4, 4)
 texture = ExtResource("5_osdy5")
 
 [node name="CropStage_UR" type="Sprite2D" parent="." unique_id=1792345068]
 visible = false
-position = Vector2(16, -16)
+position = Vector2(64, -64)
 scale = Vector2(4, 4)
 texture = ExtResource("5_osdy5")
 
 [node name="CropStage_LL" type="Sprite2D" parent="." unique_id=201245422]
 visible = false
-position = Vector2(-16, 16)
+position = Vector2(64, 64)
 scale = Vector2(4, 4)
 texture = ExtResource("5_osdy5")
 
 [node name="CropStage_LR" type="Sprite2D" parent="." unique_id=363066464]
 visible = false
-position = Vector2(16, 16)
+position = Vector2(64, 64)
 scale = Vector2(4, 4)
 texture = ExtResource("5_osdy5")
 

@@ -10,28 +10,31 @@
 [ext_resource type="Resource" uid="uid://beyec8e1lj0xb" path="res://data/crops/cucumber.tres" id="7_kq58d"]
 [ext_resource type="Resource" uid="uid://c7kyf3txch7u1" path="res://data/crops/grapes.tres" id="8_seu75"]
 [ext_resource type="Resource" uid="uid://b4cvsi0me0yiq" path="res://data/crops/greenpepper.tres" id="9_htxhm"]
-[ext_resource type="Resource" uid="uid://yx80pr3jj1j5" path="res://data/crops/lettuce.tres" id="10_jq2sk"]
-[ext_resource type="Resource" uid="uid://cyhrfhxv0ujgr" path="res://data/crops/onion.tres" id="11_4k2k6"]
-[ext_resource type="Resource" uid="uid://dj2ixcxw8bt4u" path="res://data/crops/parsnip.tres" id="12_0rl1p"]
-[ext_resource type="Resource" uid="uid://bgrumxg71db26" path="res://data/crops/potato.tres" id="13_ok6jj"]
-[ext_resource type="Resource" uid="uid://dv58a8glqmmdn" path="res://data/crops/pumpkin.tres" id="14_facbu"]
-[ext_resource type="Resource" uid="uid://d4inierdnexyu" path="res://data/crops/purpleradish.tres" id="15_b1qrp"]
-[ext_resource type="Resource" uid="uid://658hoh0ekfv5" path="res://data/crops/redpepper.tres" id="16_come4"]
-[ext_resource type="Resource" uid="uid://dctt0pjeepk0j" path="res://data/crops/redradish.tres" id="17_h8e4i"]
-[ext_resource type="Resource" uid="uid://c7ndnsg7ee6xb" path="res://data/crops/strawberry.tres" id="18_4lmeg"]
-[ext_resource type="Resource" uid="uid://cxey42n0oahyi" path="res://data/crops/sunflower.tres" id="19_0cp0l"]
-[ext_resource type="Resource" uid="uid://enue1k8j6xkq" path="res://data/crops/tomato.tres" id="20_d2t1y"]
-[ext_resource type="Resource" uid="uid://cy6m2yc27y40u" path="res://data/crops/turnip.tres" id="21_gngh3"]
-[ext_resource type="Resource" uid="uid://chsrr7t07hjoo" path="res://data/crops/watermelon.tres" id="22_0n3wm"]
-[ext_resource type="Resource" uid="uid://dkebstx06hifx" path="res://data/crops/wheat.tres" id="23_qnost"]
-[ext_resource type="Resource" uid="uid://dv8otrta0tpbx" path="res://data/crops/yellowpepper.tres" id="24_wnkbs"]
+[ext_resource type="Texture2D" uid="uid://cucnbvwjghmrf" path="res://art/crops/lettuce/lettuce_crop_1.png" id="10_yaehf"]
+[ext_resource type="Texture2D" uid="uid://beru43b3aacl2" path="res://art/crops/lettuce/lettuce_crop_2.png" id="11_074og"]
+[ext_resource type="Texture2D" uid="uid://cr2mv0xaurrio" path="res://art/crops/lettuce/lettuce_crop_3.png" id="12_cegan"]
+[ext_resource type="Texture2D" uid="uid://1olg5e8ymj78" path="res://art/crops/lettuce/lettuce_crop_4.png" id="13_82xsv"]
+[ext_resource type="Texture2D" uid="uid://n2o30qfhgg4w" path="res://art/crops/lettuce/lettuce.png" id="14_getpj"]
+[ext_resource type="Texture2D" uid="uid://cnqafm0rix5yk" path="res://art/crops/lettuce/lettuce_seedpack.png" id="15_ryguw"]
+[ext_resource type="Texture2D" uid="uid://n2uvrjvm1nn7" path="res://art/crops/lettuce/lettuce_post.png" id="16_d13ii"]
+
+[sub_resource type="Resource" id="Resource_1u8w0"]
+script = ExtResource("2_0odxb")
+seed_pack = ExtResource("15_ryguw")
+seed_post = ExtResource("16_d13ii")
+crop_stage_1 = ExtResource("10_yaehf")
+crop_stage_2 = ExtResource("11_074og")
+crop_stage_3 = ExtResource("12_cegan")
+crop_stage_4 = ExtResource("13_82xsv")
+final_crop = ExtResource("14_getpj")
+metadata/_custom_type_script = "uid://djkevnw5xau71"
 
 [node name="Main" type="Node2D" unique_id=645306665]
 
 [node name="Board" type="Node2D" parent="." unique_id=1643349823]
 position = Vector2(200, 200)
 script = ExtResource("1_0xm2m")
-crop_types = Array[ExtResource("2_0odxb")]([ExtResource("3_lswn8"), ExtResource("4_a6jrf"), ExtResource("5_xuqvo"), ExtResource("6_qsp4k"), ExtResource("7_kq58d"), ExtResource("8_seu75"), ExtResource("9_htxhm"), ExtResource("10_jq2sk"), ExtResource("11_4k2k6"), ExtResource("12_0rl1p"), ExtResource("13_ok6jj"), ExtResource("14_facbu"), ExtResource("15_b1qrp"), ExtResource("16_come4"), ExtResource("17_h8e4i"), ExtResource("18_4lmeg"), ExtResource("19_0cp0l"), ExtResource("20_d2t1y"), ExtResource("21_gngh3"), ExtResource("22_0n3wm"), ExtResource("23_qnost"), ExtResource("24_wnkbs")])
+crop_types = Array[ExtResource("2_0odxb")]([ExtResource("3_lswn8"), ExtResource("4_a6jrf"), ExtResource("5_xuqvo"), ExtResource("6_qsp4k"), ExtResource("7_kq58d"), ExtResource("8_seu75"), ExtResource("9_htxhm"), SubResource("Resource_1u8w0")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1732057584]
 

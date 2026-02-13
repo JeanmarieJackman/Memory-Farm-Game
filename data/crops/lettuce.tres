@@ -1,7 +1,21 @@
-[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://yx80pr3jj1j5"]
+[gd_resource type="Resource" script_class="CropData" format=3 uid="uid://b2w7b2e3gywq"]
 
-[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="1_sqmy1"]
+[ext_resource type="Texture2D" uid="uid://cucnbvwjghmrf" path="res://art/crops/lettuce/lettuce_crop_1.png" id="1_vfwt5"]
+[ext_resource type="Texture2D" uid="uid://beru43b3aacl2" path="res://art/crops/lettuce/lettuce_crop_2.png" id="2_37xeg"]
+[ext_resource type="Texture2D" uid="uid://cr2mv0xaurrio" path="res://art/crops/lettuce/lettuce_crop_3.png" id="3_d0uv4"]
+[ext_resource type="Texture2D" uid="uid://1olg5e8ymj78" path="res://art/crops/lettuce/lettuce_crop_4.png" id="4_6do0t"]
+[ext_resource type="Texture2D" uid="uid://n2o30qfhgg4w" path="res://art/crops/lettuce/lettuce.png" id="5_j68oy"]
+[ext_resource type="Script" uid="uid://djkevnw5xau71" path="res://scripts/CropData.gd" id="6_6045w"]
+[ext_resource type="Texture2D" uid="uid://cnqafm0rix5yk" path="res://art/crops/lettuce/lettuce_seedpack.png" id="7_28k32"]
+[ext_resource type="Texture2D" uid="uid://n2uvrjvm1nn7" path="res://art/crops/lettuce/lettuce_post.png" id="8_ydiqh"]
 
 [resource]
-script = ExtResource("1_sqmy1")
+script = ExtResource("6_6045w")
+seed_pack = ExtResource("7_28k32")
+seed_post = ExtResource("8_ydiqh")
+crop_stage_1 = ExtResource("1_vfwt5")
+crop_stage_2 = ExtResource("2_37xeg")
+crop_stage_3 = ExtResource("3_d0uv4")
+crop_stage_4 = ExtResource("4_6do0t")
+final_crop = ExtResource("5_j68oy")
 metadata/_custom_type_script = "uid://djkevnw5xau71"

@@ -21,10 +21,21 @@ Engine: Godot 4.x
 Platform: HTML5 (itch.io target)
 
 ##Credits
-Art assets by Kenmi Art
+### Art assets by Kenmi Art
 Source: https://kenmi-art.itch.io/
 
 Asset pack purchased via itch.io. Used with permission.
+
+### Music Attribution
+
+“Let’s Play!” and “Cozy Bossa”
+by PCK404
+
+From: Casual Gaming Free Music Loop Pack #01
+https://pck404.itch.io/casual-gaming-free-music-loop-pack-01
+
+Licensed under Creative Commons Attribution 4.0 International (CC BY 4.0)
+https://creativecommons.org/licenses/by/4.0/
 
 ## Next Steps
 ### Alpha
